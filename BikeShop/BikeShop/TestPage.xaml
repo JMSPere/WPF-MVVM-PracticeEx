@@ -8,13 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TestPage">
 
-    <Grid Background="WhiteSmoke">
+    <Grid Background="{Binding Text, ElementName=color}">
         <StackPanel>
             <Slider Maximum="100"
-                    Value="10"
+                    Value="{Binding Text, ElementName=text}"
                     x:Name="slider" Margin="0,0,0,10"/>
             <ProgressBar Value="{Binding Value, ElementName=slider}" Margin="0,0,0,10" />
-            <TextBox Text="{Binding Value, ElementName=slider}" Margin="0,0,0,10" />
+            <TextBox Text="{Binding Value, ElementName=slider}" Margin="0,0,0,10" x:Name="text"/>
+            <TextBox Text="WhiteSmoke" x:Name="color"/>
         </StackPanel>
     </Grid>
 </Page>
