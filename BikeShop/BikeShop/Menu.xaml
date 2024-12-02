@@ -26,8 +26,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Content="Products" Grid.Column="0" Margin="10,10,10,10" />
-            <Button Content="Live support" Grid.Column="1" Margin="10,10,10,10" />
-            <Button Content="Email support" Grid.Column="2" Margin="10,10,10,10" Click="Button_Click" />
+            <Button Content="Live support" Grid.Column="1" Margin="10,10,10,10" Click="Button_Click_Chat" />
+            <Button Content="Email support" Grid.Column="2" Margin="10,10,10,10" Click="Button_EmailSupport" />
         </Grid>
         <TextBlock 
             Grid.Row="2"
